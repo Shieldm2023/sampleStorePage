@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Cart | Shieldify.com</title>
+    
+    <!-- Responsive design settings for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Link to favicon -->
+    <link rel="icon" type="image/x-icon" href="Header Assets/logo-clear.png">
+    
+    <!-- Link to CSS stylesheet for the checkout page -->
+    <link rel="stylesheet" href="/storePage/CSS/checkout.css">
+</head>
+<body>
+    <!-- Header section containing the logo and checkout information -->
+    <div class="header">
+        <a class="home-link" href="homepage.html">
+            <img class="logo" src="Header Assets/Logo.png"> <!-- Logo linking back to the homepage -->
+        </a>
+        <span class="header-text">Checkout (<div class="item-quantity">0</div> <span class='items'> items</span>)</span> <!-- Displaying current item quantity in the cart -->
+    </div>
+
+    <!-- Container for the order summary; will be populated dynamically -->
+    <div class="order-summary js-order-summary">
+    </div>
+
+    <!-- Link to external JavaScript file for checkout functionality -->
+    <script type="module" src="scripts/checkout.js"></script>
+</body>
+</html>

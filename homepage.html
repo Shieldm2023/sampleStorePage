@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home | Shieldify.com</title>
+
+    <!-- Responsive design settings for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Link to favicon -->
+    <link rel="icon" type="image/x-icon" href="Header Assets/logo-clear.png">
+
+    <!-- Link to CSS stylesheets -->
+    <link rel="stylesheet" href="/storePage/CSS/header.css">
+    <link rel="stylesheet" href="/storePage/CSS/page.css">
+    <link rel="stylesheet" href="/storePage/CSS/products.css">
+</head>
+<body>
+    <!-- Header section of the website -->
+    <div class="header">
+        <div class="info-section">
+            <!-- Contact link with logo and text -->
+            <a class="contact-link header-link" href="contact.html">
+                <img class="logo" src="Header Assets/Logo.png">
+                <div class="text-container">
+                    <span class="contact-text">Contact</span>
+                    <span class="about-text"> & About Us</span> 
+                </div>
+            </a>
+        </div>
+
+        <!-- Search section for product search -->
+        <div class="search-section">
+            <input class="search-bar" type="text" placeholder="Search">
+            <button class="search-button">
+                <img class="search-icon" src="Header Assets/search.png">
+            </button>
+        </div>
+
+        <!-- Cart and account management section -->
+        <div class="cart-section">
+            <div class="orders-container">
+                <!-- Link to orders and returns page -->
+                <a class="orders-link header-link" href="orderpage.html">
+                    <span class="returns-text">Returns</span>
+                    <span class="orders-text">& Orders</span>
+                </a>
+            </div>
+
+            <div class="account-container">
+                <!-- Link to account management page -->
+                <a class="account-link header-link" href="account.html">
+                    <div class="account-icon-container">
+                        <img class="account-icon" src="Header Assets/account.png">
+                    </div>
+                    <div class="account-sign-in-container">
+                        <span class="sign-in-text">Sign in</span>
+                        <span class="account-text">Account</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="cart-container">
+                <!-- Link to the shopping cart page -->
+                <a class="cart-link header-link" href="checkout.html">
+                    <img class="cart-icon" src="Header Assets/cart.png">
+                    <div class="cart-quantity">0</div> <!-- Cart item quantity -->
+                    <div class="cart-text">Cart</div>
+                </a>  
+            </div>
+            
+            <div class="mobile-display">
+                <!-- Mobile menu icon for smaller screens -->
+                <div class="mobile-menu">
+                    <img class="mobile-menu-icon" src="Header Assets/mobile-menu.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile dropdown menu for easy navigation -->
+    <div class="mobile-drop-down">
+        <div class="mobile-account-line">
+            <img class="account-icon" src="Header Assets/account.png">
+            <button class="mobile-account-link mobile-link" onclick="window.location.href = 'account.html'">Sign in or Manage Account</button>
+        </div>
+        <a class="mobile-order-link mobile-link" href="orderpage.html">Orders</a>
+        <a class="mobile-cart-link mobile-link" href="checkout.html">Cart</a>
+        <a class="mobile-contact-link mobile-link" href="contact.html">About Us</a>
+    </div>
+
+    <!-- Hero section featuring promotional content -->
+    <div class="hero-section">
+        <div class="latest-styles js-styles">
+            <span class="style-text hero-text">Unleash Your Style: Discover Our Latest Collection</span>
+            <img class="style-icon" src="hero section assets/latest-styles.png">
+        </div>
+        <div class="tech-deals js-tech">
+            <span class="tech-text hero-text">Get Our Best Deals on Tech</span>
+            <img class="tech-icon" src="hero section assets/tech.png">
+        </div>
+        <div class="VIP js-vip">
+            <div class="VIP-text hero-text">
+                <span class="VIP-text-line1">Join the VIP Club and Get our Premium Benefits:</span>
+                <span class="VIP-text-line2">Exclusive Deals, Faster Shipping, & Early Access to the Newest Releases</span>
+                <span class="VIP-text-line3">Sign up Now</span>
+            </div>
+        </div>
+        <div class="top-picks js-top">
+            <span class="top-picks-text hero-text">Top Picks of the Month: Fall Items for Less</span>
+            <img class="top-picks-icon" src="hero section assets/top-picks.png">
+        </div>
+        <div class="favorites js-favorites">
+            <div class="favorites-text hero-text">
+                <span class="favorites-text-line1">Customer Favorites</span>
+                <span class="favorites-text-line2">Top Rated Finds</span>
+            </div>
+            <img class="favorites-icon" src="hero section assets/favorites.png">
+        </div>
+        <div class="bedding js-bedding">
+            <div class="bedding-text hero-text">
+                <span class="bedding-text-line1">Maximize Your Comfort</span>
+                <span class="bedding-text-line2">Shop Bedding</span>
+            </div>
+            <img class="bedding-icon" src="hero section assets/bedding.png">
+        </div>
+        <div class="trend js-trend">
+            <div class="trend-text hero-text">
+                <span class="trend-text-line1">Shop the Trend:</span>
+                <span class="trend-text-line2">Must-Have Items</span>
+            </div>
+            <img class="trend-icon" src="hero section assets/trend.png">
+        </div>
+    </div>
+
+    <!-- Products page section -->
+    <div class="products-page">
+        <p class="products-header">Browse our Collection</p>
+        <p class="products-subheader">In-Store Now</p>
+        <div class="products js-products-grid">
+            <!-- Products will be dynamically loaded here -->
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script type="module" src="scripts/script.js"></script>
+</body>
+</html>

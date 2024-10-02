@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Orders | Shieldify.com</title>
+    
+    <!-- Responsive design settings for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Link to favicon -->
+    <link rel="icon" type="image/x-icon" href="Header Assets/logo-clear.png">
+    
+    <!-- Link to CSS stylesheet for order page -->
+    <link rel="stylesheet" href="/storePage/CSS/orderpage.css">
+</head>
+<body>
+    <!-- Header section of the order page -->
+    <div class="header">
+        <!-- Link to the homepage with the logo -->
+        <a class="home-link" href="homepage.html">
+            <img class="logo" src="Header Assets/Logo.png">
+        </a>
+    </div>
+
+    <!-- Section displaying the last order text -->
+    <p class="orders-text">Your Last Order:</p>
+    
+    <!-- Container for the order summary; content will be dynamically loaded -->
+    <div class="order-summary js-order-summary"></div>
+    
+    <!-- Container for displaying the order status -->
+    <div class="order-status"></div>
+    
+    <!-- Link to external JavaScript file for order page functionality -->
+    <script type="module" src="scripts/orderpage.js"></script>
+</body>
+</html>

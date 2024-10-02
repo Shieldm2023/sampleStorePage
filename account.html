@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <!-- Responsive design settings for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Link to CSS stylesheet for account page -->
+    <link rel="stylesheet" href="/storePage/CSS/account.css">
+    
+    <title>Sign In | Shieldify.com</title>
+</head>
+<body class="sign-in-flex">
+    <!-- Header section displaying the page title -->
+    <div class="header">
+        <span class="header-text">Sign In</span> <!-- Main heading for the sign-in page -->
+    </div>
+    
+    <!-- Label for email input field -->
+    <div class="email-text">Email Address</div>
+    
+    <!-- Input field for the user's email address -->
+    <input class="email-input input-field" type="text" placeholder="yourname@domain.com">
+    
+    <!-- Section for password input with a link to reset password -->
+    <div class="password-text">
+        <span class="password">Password</span> <!-- Label for password input -->
+        <a class="forgot-password-link" onclick="alert('You probably should have written it down')">Forgot Password?</a> <!-- Link for users who forgot their password -->
+    </div>
+    
+    <!-- Input field for the user's password -->
+    <input class="password-input input-field" type="password" placeholder="Enter Your Password">
+    
+    <!-- Sign-in button for user authentication -->
+    <button class="sign-in-button">Sign In</button>
+    
+    <!-- Section prompting users to create a new account if they don't have one -->
+    <div class="create-account">
+        <span class="account-text">Don't have an account?</span>
+        <a class="create-account-link">Create your account</a> <!-- Link to create a new account -->
+    </div>
+    
+    <!-- Link to external JavaScript file for account page functionality -->
+    <script type="module" src="scripts/account.js"></script>
+</body>
+</html>
