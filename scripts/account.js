@@ -49,7 +49,7 @@ function createAccountButtonLogic() {
             });
 
             //confirm password match
-            if (password === confirmPassword) {
+            if (password === confirmPassword && email) {
                 // Create a new account object
                 const newAccount = {
                     email: email,
@@ -80,7 +80,7 @@ function createAccountButtonLogic() {
                 SignInLogic();
                 // Re-setup the create account link logic
                 createAccountLinkLogic();
-            } else {
+            } else if(email){
                 alert("Password does not match"); // Alert if passwords do not match
             }
         }
